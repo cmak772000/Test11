@@ -6,7 +6,7 @@ on:
     inputs:
       s1:
         type: string
-        default: hell world
+        default: hello world
         description: a string
       c1:
         type: choice
@@ -14,13 +14,13 @@ on:
           - option1
           - option2
           - option3
-        default: ""
+        default: option1
         description: a choice
       n1:
         type: number
         default: 1
-        description: a number
         required: true
+        description: a number
       b1:
         type: boolean
         default: true
