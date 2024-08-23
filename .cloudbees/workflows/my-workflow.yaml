@@ -7,7 +7,6 @@ on:
       s1:
         type: string
         default: hell world
-        required: true
         description: a string
       c1:
         type: choice
@@ -21,6 +20,7 @@ on:
         type: number
         default: 1
         description: a number
+        required: true
       b1:
         type: boolean
         default: true
