@@ -32,7 +32,7 @@ jobs:
         shell: sh
         run: |
           echo "hello world"
-          echo "b1 is '${{ inputs.b1}}"
-          echo "c1 is '${{ inputs.c1}}"
-          echo "n1 is '${{ inputs.n1}}"
-          echo "s1 is '${{ inputs.s1}}"
+          echo "b1 is '${{ inputs.b1}}'"
+          echo "c1 is '${{ inputs.c1}}'"
+          echo "n1 is '${{ inputs.n1}}'"
+          echo "s1 is '${{ inputs.s1}}'"
