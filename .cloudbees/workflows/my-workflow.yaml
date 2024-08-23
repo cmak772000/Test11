@@ -1,12 +1,30 @@
 apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
 name: My workflow
-
 on:
-  push:
-    branches:
-      - '**'
-
+  workflow_dispatch:
+    inputs:
+      s1:
+        type: string
+        default: hell world
+        required: true
+        description: a string
+      c1:
+        type: choice
+        options:
+          - option1
+          - option2
+          - option3
+        default: ""
+        description: a choice
+      n1:
+        type: number
+        default: 1
+        description: a number
+      b1:
+        type: boolean
+        default: true
+        description: a boolean
 jobs:
   build:
     steps:
